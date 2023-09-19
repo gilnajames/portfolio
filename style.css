@@ -1,0 +1,309 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.nav-image {
+    height: 135px;
+    width: 135px;
+    margin-left: 100px;
+}
+
+nav {
+    display: flex;
+    /* align item in a line */
+    justify-content: space-between;
+    /* place elements one on left and one on right */
+    align-items: center;
+    /* to align items vertically center*/
+    width: 90%;
+}
+
+.list-item {
+    display: inline-block;
+    /* same line il text varaan */
+    margin: 10px 20px 20px;
+
+}
+
+.lists {
+    text-decoration: none;
+    /* remove underline from link tag */
+    color: black;
+    font-weight: bold;
+
+}
+
+.lists:hover {
+    color: red;
+    /* list ilee elements click cheyumbo red color il highlight avan hover ennaa property kodukaa */
+}
+
+.secondname {
+    color: orange;
+
+}
+
+.title {
+    margin-top: 13%;
+    margin-left: 8%;
+
+}
+
+
+
+.title-h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.download {
+    background-color: black;
+    color: white;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: inline-block;/* a tag inline type aanu athil margintop onum work cheyila so athine block type akkan vedii ith */
+    text-decoration: none; /* link il ninu underline povan */
+    border-radius: 5px;/* boton pole shape varan dowload tag nu */
+    font-weight: bold;
+
+} 
+.images{
+    position: absolute;
+    width: 65%;
+    height: 60%;
+    bottom: 0px;
+    right: 20px;
+    top: 30%;
+}
+.images img{
+position: absolute;
+height: 100%;
+left: 50%;
+bottom: 0px;
+transform: translate(-50%);
+transition: bottom 1s,left 1s;
+}
+.images:hover #shape{
+  bottom: 20%;
+   
+}
+.images:hover #girl{
+    left: 20%;
+
+}
+
+#about{
+    margin: 15% 8% 0px 8%;
+}
+
+.about-heading{
+
+text-align: center;
+
+}
+
+.abouth2{
+    font-size: 32px;
+    font-weight: 400;/* boldness kurakan */
+
+}
+  .intro{
+    color: green;
+    font-size: 20px;
+    font-weight: 400;
+  }
+   .about-image{
+    width: 45%;
+   }
+   .about-container{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    gap: 10px;
+   }
+   .about-details{
+    font-size: 18px;
+    text-align: justify;
+   }
+   .info{
+    margin-top: 20px;
+   }
+   .each-info{
+    margin-top:10px ;
+   }
+
+   .info-span{
+    margin-left: 15px;
+   }
+
+   .skill-heading{
+    text-align: center;
+
+   }
+   #skills{
+    margin: 4% 8% 0px 8%;
+
+   }
+   .skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    gap: 10px;
+
+   }
+   
+
+   .progress-bar{
+    margin-left: 70px;
+    padding-left: 40px;
+    margin-top: 100px;
+   }
+
+.bar-container{
+   display: flex;/* 2 side il content varan */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.base-bar{
+    background-color: black;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+   
+}
+.orange-bar{
+
+    background-color: orange;
+    width: 95%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.skill-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+.contact-heading{
+    margin-top: 50px;
+    text-align: center;
+}
+.icon-set{
+    display: flex;/* 2 side il content varan */
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    /* position: relative; */
+    margin-top: 10px;
+ 
+   
+}
+
+.icon-style:hover{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.each-icon:hover{
+    background-image:linear-gradient(to bottom right,yellow,red);
+}
+
+.icon-style:hover {
+    color: white;
+    animation-name: shake;
+    animation-duration: 0.75s;
+
+
+}
+
+@keyframes shake {
+
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg); 
+    }
+    
+}
+
+.each-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.each-icon i{
+    font-size: 30px;
+    color: black;
+}
+
+
+
+.bottom-footer{
+
+    margin-top:20px ;
+    margin-bottom:0px ;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right,yellow,red);
+    margin: 0px 10px 50px 0px;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    border-radius: 20px;
+}
+.up-arrow i{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
